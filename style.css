@@ -1,0 +1,21 @@
+
+body{
+	background-color: hotpink;
+}
+
+
+button{
+	background-color: blue;
+}
+
+div{
+	color: yellow; border-style: dotted;
+}
+
+.secret{
+	color: red;
+}
+
+#super{
+	color: orange;
+}
