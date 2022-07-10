@@ -1,0 +1,56 @@
+
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		body
+
+
+		<div >
+			div
+		</div>
+		<div style="" class="secret" >
+			Secret1
+		</div>
+
+		<div style="" class="secret" id="super">
+			Secret2
+		</div>
+
+		<button id="btn"  style="">
+			button
+		</button>
+
+		<div id="test1">
+			html, css, javascript
+		</div>
+
+
+	</body>
+
+	<script>
+		window.addEventListener('load', (event) => {
+
+			console.log('page is fully loaded');
+
+			
+			
+			let btn = document.querySelector('button#btn');
+			//let btn = document.querySelector('#btn');
+
+			let test1 = document.querySelector("div#test1");
+
+			
+			let count = 0;
+			btn.addEventListener("click", function() {
+				console.log("clicked" + count++);
+
+				test1.style = "color: red;";
+			});
+
+		});
+
+	</script>
+</html>
