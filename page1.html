@@ -1,0 +1,54 @@
+<html lange = 'en'>
+    <head>
+        <meta charset = 'UTF-8'>
+        <title>개버랜드</title>
+        <style>
+            body {
+                background-image : url('https://uploads-ssl.webflow.com/624fdc51fb8c8b78193d9734/62551ffa69d4ac41b3489ab2_main-banner-04.jpg');
+                background-repeat : no-repeat;
+                background-size : cover;
+            }
+        </style>
+    </head>
+    <body style="text-align : center;">
+             
+        <p><form action = '{% url 'page2' %}' method = 'post'>
+            
+            {% csrf_token %}
+            
+            <a style = 'color : white'>
+            <h1> WELCOME TO 개버랜드 </h1>
+            <p><img src = 'logo.png' ></p>
+            {% comment %} 강아지 이름  {% endcomment %}
+            <p>
+                <label for = 'name'> 강아지 이름 : </label>
+                <input id = 'name' type = 'text' name = 'name' value = '{{dog_name}}'>
+            </p>
+
+            {% comment %} 강아지 나이  {% endcomment %}
+            <p>
+                <label for = 'age'> 강아지 나이 : </label>
+                <input id = 'age' type = 'text' name = 'age' value = '{{dog_age}}'>
+            </p>
+
+            {% comment %} 강아지 체중  {% endcomment %}
+            <p>
+                <label for = 'wgt'> 강아지 체중 : </label>
+                <input id = 'wgt' type = 'text' name = 'wgt' value = '{{dog_wgt}}'
+            </p>
+
+            {% comment %} 강아지 품종  {% endcomment %}
+            <p>
+                <label for = 'kind'> 강아지 품종 : </label>
+                <input id = 'kind' type = 'text' name = 'kind' value = '{{kind}}'>
+            </p>
+
+            {% comment %} 입력버튼 {% endcomment %}
+            <p>         
+                <input type = 'submit' value = '환상의 나라 개버랜드로 입장 ~ '>
+            </p>
+            </a> 
+
+        </form></p> 
+    </body>
+</html>
