@@ -1,2 +1,2 @@
 # HTML-CSS
-FRONT-END 
+using Django / HTML / CSS / NAVER API
